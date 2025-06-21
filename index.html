@@ -8,6 +8,23 @@
 </head>
 <body>
   <h1>nMarkdown</h1>
+
+  <div class="toolbar">
+    <button onclick="insertMarkdown('# ')"><img src="images/title.svg" alt="Título" title="Título" /></button>
+    <button onclick="insertMarkdown('**', '**')"><img src="images/bold.svg" alt="Negrito" title="Negrito" /></button>
+    <button onclick="insertMarkdown('*', '*')"><img src="images/italic.svg" alt="Itálico" title="Itálico" /></button>
+    <button onclick="insertMarkdown('~~', '~~')"><img src="images/strike.svg" alt="Tachado" title="Tachado" /></button>
+    <button onclick="insertMarkdown('- ')"><img src="images/list.svg" alt="Lista" title="Lista" /></button>
+    <button onclick="insertMarkdown('1. ')"><img src="images/list_numbered.svg" alt="Lista Num." title="Lista Numerada" /></button>
+    <button onclick="insertMarkdown('> ')"><img src="images/quote.svg" alt="Citação" title="Citação" /></button>
+    <button onclick="insertMarkdown('`', '`')"><img src="images/code.svg" alt="Código Inline" title="Código Inline" /></button>
+    <button onclick="insertMarkdown('```\\n', '\\n```')"><img src="images/code_blocks.svg" alt="Bloco de Código" title="Bloco de Código" /></button>
+    <button onclick="insertMarkdown('![alt](url)')"><img src="images/image.svg" alt="Imagem" title="Imagem" /></button>
+    <button onclick="insertMarkdown('[texto](url)')"><img src="images/link.svg" alt="Link" title="Link" /></button>
+    <button onclick="insertMarkdown('- [ ] ')"><img src="images/checklist.svg" alt="Tarefa" title="Tarefa" /></button>
+    <button onclick="insertMarkdown('---\\n')"><img src="images/line.svg" alt="Linha" title="Linha Horizontal" /></button>
+  </div>
+
   <div class="editor-container">
     <textarea id="markdown" placeholder="Escreva seu Markdown aqui..."></textarea>
     <div id="preview" class="preview"></div>
